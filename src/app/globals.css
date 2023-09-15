@@ -17,11 +17,17 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+@layer components {
+  .social {
+    @apply text-bleu text-2xl cursor-pointer hover:opacity-50 ease-in-out duration-150 transition-all;
+  }
 }
